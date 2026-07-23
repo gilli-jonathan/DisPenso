@@ -20,9 +20,8 @@ app.listen(port, () => {
 });
 
 
-
-
 const productRouter = require('./routers/productRouter');
+const nutritionRouter = require('./routers/nutritionRouter');
 
-
-app.use('/product', productRouter);
+app.use('/product', productRouter)
+app.use('/nutrition', nutritionRouter)
